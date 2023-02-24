@@ -23,8 +23,8 @@ int main(int argc , char **argv) {
             printf("dequeing %d\n",x);
         }
         else {
-       enqueue_struct(&q, atoi(argv[i]));
-           
+       enqueue_struct(&q, atoi(argv[i]), argv[i+1]);
+           i++;
         }
  }
   return 0;
