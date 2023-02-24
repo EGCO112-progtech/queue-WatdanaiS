@@ -19,7 +19,6 @@ typedef struct node* NodePtr;
 
 void enqueue(NodePtr * head, NodePtr* tail, int x){
   Node* new_node=(NodePtr) malloc(sizeof(Node));
-  //int *value;
 if(new_node){
   new_node->data=x;
   new_node->nextPtr=NULL;
